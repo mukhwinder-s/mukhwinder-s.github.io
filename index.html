@@ -12,17 +12,17 @@
         
         <!-- <a class="nav-link border border-secondary" href="#">Contacts</a> -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon border border-success" style="color: white ;"></span>
+          <span class="navbar-toggler-icon" style="color: white ;"></span>
         </button>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="navbar-brand border border-success" href="#">Home</a>
+                <a class="navbar-brand" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link border border-secondary" href="#">Contacts</a>
+              <a class="nav-link" href="#">Contacts</a>
             </li>
           </ul>
         </div>
@@ -36,21 +36,28 @@
     <div id="content" class="content">
         <div id="content_page" class="content content-image">
             <div id="card_image">
-                   <!-- <img id="profileImg" title="profileImage" src="">  -->
+                  
+                   <img id="profileImg" title="Eat Code Sleep Repeat" src="EatCodeSleepRepeat.PNG"> 
+                   <div class="img profile-image"></div>
                    <div  class="caption-img">
                         <p>“It was everything I wanted to be. Archimedes was my ideal.
                             I admired the works of artists, but for me they were only shadows and appearances." <br/>
                             <b>" The inventor, I thought, gives the world palpable creations that live and function. " </b>
                         </p>
                         <p>
-                            <b>-Nikola Tesla</b>
+                            <b title="Nikola Tesla">-Nikola Tesla</b>
                         </p>
                    </div>   
 
             </div>
         </div>
+    </div>     
 
+    <div id="title" class="name_bg">
+        <p style="text-align: center;" class="skills" onclick="topFunction()" >Skills</p>
+    
     </div>
+ 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
@@ -99,7 +106,7 @@
         <span id="CopyRightText">
            <div id="CopyRightTextDiv">
                <p style="color: white; text-align:center" id="CopyRightTextPar"></p>
-               <button onclick="topFunction()" id="btnScrollUp" title="Go Up" ></button>
+               <!-- <button onclick="topFunction()" id="btnScrollUp" title="Go Up" ></button> -->
 
                <script>
                    DateX = new Date()
@@ -164,9 +171,15 @@
         font-size: 70px;
        
     }
+
+    .skills{
+        font-size: 70px;
+        margin-top:25%;
+        height: 10%;
+    }
     
     .content{
-        height: 200vh;
+        height: 15%;
         width: 90%;
 
     }
@@ -178,14 +191,25 @@
     
    
     }
+
+    footer{
+        margin-top: 30%;
+    }
     img{
-        width:100%;
-        height: 100%;
+        margin-right: auto;
+        margin-left: auto;
         text-align: center;
-        
+        display: block;         
+    }
+    img .profile-image{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-image: url();
     }
     .caption-img{
         color: white;
+        margin-top: -10%;
         font-size: 15px;
         text-align: center;
     }
