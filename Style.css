@@ -1,0 +1,192 @@
+
+/*
+// ------------------------
+// -> Scroll bar inizio
+// ------------------------
+*/
+
+::-webkit-scrollbar{
+    width: 5px;
+    position: absolute;
+    left: auto;
+    background-color: black;
+
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(251, 6, 6);
+    border-radius: 50%;
+    border-style: inset;
+    border-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+}
+
+/*
+// ------------------------
+// -> Scroll bar fine
+// ------------------------
+*/
+
+
+/*
+// ------------------------
+// -> Corpo Inizio
+// ------------------------
+*/
+body{
+    background-color: black;
+
+}
+
+/*
+// ------------------------
+// -> Corpo Fine
+// ------------------------
+*/
+
+/*
+// ------------------------
+// -> Titoli Inizio
+// ------------------------
+*/
+
+.name_bg{
+    background-color: black;
+    color:white;
+    animation: title_bgg 4s alternate-reverse infinite ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.name{
+    font-size: 70px;
+
+}
+
+.skills{
+    font-size: 70px;
+    height: 10%;
+}
+/*
+// ------------------------
+// -> Titoli Fine
+// ------------------------
+*/
+
+
+.content{
+    height: 15%;
+    width: 90%;
+
+}
+.content .content-image{
+    border-color: white;
+    height: 65%;
+    width: 100%;
+    position: absolute;
+
+
+}
+
+footer{
+    position:fixed;
+    bottom:0;
+    text-align: center;
+}
+img{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    display: block;         
+}
+img .profile-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+}
+.caption-img{
+    color: white;
+    margin-top: -10%;
+    font-size: 15px;
+    text-align: center;
+    height: 30%;
+}
+.fixed {
+    position: fixed;
+    top:0; left:0;
+    width: 100%;
+}
+
+@keyframes title_bgg {
+0%{
+    background-color: white;
+    color: black;
+}
+1%{
+    background-color: rgb(0, 255, 255);
+    color: black;
+}
+2%{
+    background-color: rgb(8, 246, 246);
+    color: black;
+}
+}
+
+
+/*
+// ------------------------
+// -> Sistemazione per rendere responsive la pagina Inizio
+// ------------------------
+*/
+
+
+/*
+ ---/ Responsive thang
+*/
+@media (min-width:360px)  and (max-width:375px)  {
+    img {
+        width: 380px;
+        height: 300px;
+        border-radius: 50%; 
+    }
+
+}
+@media (min-width:375px)  and (max-width:390px)  {
+    img {
+        width: 370px;
+        height: 300px;
+        border-radius: 50%; 
+    }
+
+}
+
+
+@media ( min-width:391px) and (max-width:414px) {
+    img {
+        width: 428px;
+        height: 300px;
+        border-radius: 50%; 
+    }
+}
+@media (width:1536px) {
+    img {
+        width: 1536px;
+        height: 573px;
+        border-radius: 50%; 
+    }
+}
+@media ( width:1920px) {
+    img {
+        width: 900px;
+        height: 573px;
+        border-radius: 50%; 
+    }
+}
+
+/*
+// ------------------------ 
+// -> Sistemazione per rendere responsive la pagina Fine
+// ------------------------
+*/

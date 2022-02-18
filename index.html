@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title >M.S.</title>
-
+    <link rel="stylesheet" href="../Github.Profile/css/Style.css">
 </head>
 <body >
     <nav data-spy="scroll" class="navbar navbar-collapse navbar-expand-lg  navbar navbar-dark " style="background-color: black;">
@@ -36,7 +36,7 @@
         <div id="content_page" class="content content-image">
             <div id="card_image">
                   
-                   <img src="EatCodeSleepRepeat.jpg" id="profileImg" title="Eat Code Sleep Repeat" > 
+                   <img src="EatCodeSleepRepeat.png" id="profileImg" title="Eat Code Sleep Repeat" > 
                    <div class="img profile-image"></div>
                    <div  class="caption-img">
                         <p>“It was everything I wanted to be. Archimedes was my ideal.
@@ -46,57 +46,22 @@
                         <p>
                             <b title="Nikola Tesla">-Nikola Tesla</b>
                         </p>
-                   </div>   
 
+                   </div>   
+                   <div id="title" class="name_bg">
+                    <p style="text-align: center;" class="skills" onclick="topFunction()" >Skills</p>
+                
+                </div>
             </div>
         </div>
     </div>     
 
-    <div id="title" class="name_bg">
-        <p style="text-align: center;" class="skills" onclick="topFunction()" >Skills</p>
-    
-    </div>
+
  
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-    <script>
-
-        //-------------------------------------------------------------
-        //Funzione per fissare
-        //-------------------------------------------------------------
-        $(window).scroll(function(){
-            var sticky = $('.name'),
-                scroll = $(window).scrollTop();
-          
-            if (scroll >= 100) sticky.addClass('fixed');
-            else sticky.removeClass('fixed');
-          });
-
-          $(window).scroll(function(){
-            var sticky = $('nav'),
-                scroll = $(window).scrollTop();
-          
-            if (scroll >= 100) sticky.addClass('fixed');
-            else sticky.removeClass('fixed');
-          });
-          
-          //-------------------------------------------------------------
-          //Funzione per nascondere
-          //-------------------------------------------------------------
-
-
-          $(window).scroll(function() {
-            if ($(this).scrollTop() > 100) {
-              $('#content_page').fadeOut();
-            }
-            else {
-              $('#content_page').fadeIn();
-            }
-          });
-
-            //-------------------------------------------------------------
-    </script>  
+    
 </body>
 
 <footer>
@@ -106,132 +71,13 @@
            <div id="CopyRightTextDiv">
                <p style="color: white; text-align:center" id="CopyRightTextPar"></p>
                <!-- <button onclick="topFunction()" id="btnScrollUp" title="Go Up" ></button> -->
-
-               <script>
-                   DateX = new Date()
-                   document.getElementById("CopyRightTextPar").innerHTML = "Copyright M.S. " + DateX.getFullYear() +" ©"
-                   
-                    var mybutton = document.getElementById("btnScrollUp");
-                    window.onscroll = function() {scrollFunction()};
-
-                    function scrollFunction() {
-                        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                            mybutton.style.display = "block";
-                        } else {
-                            mybutton.style.display = "none";
-                        }
-                    }
-                    const delay = ms => new Promise(res => setTimeout(res, ms));
-                    async function topFunction() {
-                        document.body.scrollTop = 0;
-                        document.documentElement.scrollTop =0;
-                             
-                    }
-
-               </script>            
+               
                
            </div>
         </span>
     </span>
 </span>
-
+<script src="./js/JSQuery_Script.js"></script>
+<script src="./js/Script.js"></script>
 </footer>
-<style>
-    ::-webkit-scrollbar{
-        width: 5px;
-        position: absolute;
-        left: auto;
-        background-color: black;
-
-    }
-    ::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 5px rgb(251, 6, 6);
-        border-radius: 50%;
-        border-style: inset;
-        border-color: black;
-      }
-      
-      ::-webkit-scrollbar-thumb {
-        background: white;
-        border-radius: 10px;
-      }
-    body{
-        background-color: black;
-        
-    }
-    .name_bg{
-        background-color: black;
-        color:white;
-        animation: title_bgg 4s alternate-reverse infinite ;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        
-    }
-    .name{
-        font-size: 70px;
-       
-    }
-
-    .skills{
-        font-size: 70px;
-        margin-top:25%;
-        height: 10%;
-    }
-    
-    .content{
-        height: 15%;
-        width: 90%;
-
-    }
-    .content .content-image{
-       border-color: white;
-       height: 65%;
-       width: 100%;
-       position: absolute;
-    
-   
-    }
-
-    footer{
-        margin-top: 30%;
-    }
-    img{
-        margin-right: auto;
-        margin-left: auto;
-        text-align: center;
-        display: block;         
-    }
-    img .profile-image{
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        background-image: url();
-    }
-    .caption-img{
-        color: white;
-        margin-top: -10%;
-        font-size: 15px;
-        text-align: center;
-    }
-    .fixed {
-        position: fixed;
-        top:0; left:0;
-        width: 100%;
-     }
-    
-    @keyframes title_bgg {
-        0%{
-            background-color: white;
-            color: black;
-        }
-        1%{
-            background-color: rgb(0, 255, 255);
-            color: black;
-        }
-        2%{
-            background-color: rgb(8, 246, 246);
-            color: black;
-        }
-    }
-
-</style>
 </html>
