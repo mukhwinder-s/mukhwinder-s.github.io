@@ -116,6 +116,7 @@ footer{
     margin-top: -10%;
     font-size: 30px;
     text-align: center;
+    font-family: 'Pixies';
  
 }
 #MLImg{
@@ -130,16 +131,7 @@ footer{
     width: 100%;
 }
 
-/* #box-tesla{
-    width: 1920px;
-    height: 500px;
-    position: center;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    border: 1px solid white;
-}
-  */
+ 
 canvas{
     width: 1910px;
     height: 630px;
@@ -164,6 +156,45 @@ canvas{
     color: black;
 }
 }
+ 
+#AboutCard{
+    font-family: 'Pixies';
+    color: white;
+    text-align: center;
+    font-size: 90px;
+
+  }
+
+  .emojis{
+    font-family: 'Pixies';
+    animation: pulsate 0.5s ease-in-out infinite alternate;
+  }
+
+
+  @keyframes pulsate {
+    100% {
+      text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px rgb(255, 0, 43),
+        0 0 80px rgb(156, 4, 42),
+        0 0 90px #f09,
+        0 0 100px rgb(0, 212, 71),
+        0 0 150px rgb(0, 17, 95);
+    }
+   0% {
+      text-shadow:
+        0 0 4px rgb(207, 28, 28),
+        0 0 10px #fff,
+        0 0 18px #fff,
+        0 0 38px rgb(20, 6, 139),
+        0 0 73px rgb(53, 6, 139),
+        0 0 80px rgb(0, 255, 42),
+        0 0 94px rgb(29, 23, 27),
+        0 0 140px rgb(216, 11, 11);
+    }
+  }
 
 
 /*
@@ -201,7 +232,12 @@ canvas{
         margin-left: auto;
         text-align: center;
      }
-    
+     #AboutCard{
+        font-family: 'Pixies';
+        color: white;
+        text-align: center;
+        font-size: 18px;  
+      }
 
 
 }
@@ -231,6 +267,12 @@ canvas{
         text-align: center;
      }
 
+     #AboutCard{
+        font-family: 'Pixies';
+        color: white;
+        text-align: center;
+        font-size: 18px;  
+      }
 }
 
 
@@ -259,6 +301,12 @@ canvas{
         margin-left: auto;
         text-align: center;
      }
+     #AboutCard{
+        font-family: 'Pixies';
+        color: white;
+        text-align: center;
+        font-size: 18px;  
+      }
 }
 @media (width:1536px) {
     img {
@@ -285,6 +333,12 @@ canvas{
         margin-left: auto;
         text-align: center;
      }
+     #AboutCard{
+        font-family: 'Pixies';
+        color: white;
+        text-align: center;
+        font-size: 90px;  
+      }
 }
 @media ( width:1920px) {
     img {
@@ -311,6 +365,12 @@ canvas{
         margin-left: auto;
         text-align: center;
      }
+     #AboutCard{
+        font-family: 'Pixies';
+        color: white;
+        text-align: center;
+        font-size: 90px;  
+      }
 
 }
 
