@@ -19,6 +19,22 @@ $(window).scroll(function(){
     else sticky.removeClass('fixed');
   });
   
+  $(window).scroll(function(){
+    var precSticky = $('.name'),
+    scroll = $(window).scrollTop();
+
+    if(scroll >=900) precSticky.removeClass('fixed');
+    
+    var sticky = $('#AboutMe'),
+        scroll = $(window).scrollTop();
+  
+    if (scroll >= 900) sticky.addClass('fixed');
+    else sticky.removeClass('fixed');
+    
+
+ 
+  });
+
 
 
   $(window).scroll(function() {

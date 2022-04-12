@@ -164,7 +164,22 @@ canvas{
     font-size: 90px;
 
   }
-
+#skilledIN{
+    font-size:75px;
+}
+#currentlyLearning{
+    font-size:70px;
+}
+#frontendLI{
+    font-size:60px;
+}
+#backendLI{
+    font-size:60px;
+}
+#currentlyLI{
+    font-size:60px;
+}
+ 
   .emojis{
     font-family: 'Pixies';
     animation: pulsate 0.5s ease-in-out infinite alternate;
@@ -238,8 +253,21 @@ canvas{
         text-align: center;
         font-size: 18px;  
       }
-
-
+    #skilledIN{
+        font-size:17x;
+    }
+    #currentlyLearning{
+        font-size:17px;
+    }
+    #frontendLI{
+        font-size:15px;
+    }
+    #backendLI{
+        font-size:15px;
+    }
+    #currentlyLI{
+        font-size:15px;
+    }
 }
 @media (min-width:375px)  and (max-width:390px)  {
     img {
@@ -273,6 +301,23 @@ canvas{
         text-align: center;
         font-size: 18px;  
       }
+      #skilledIN{
+        font-size:17x;
+    }
+    #currentlyLearning{
+        font-size:17px;
+    }
+    #frontendLI{
+        font-size:15px;
+    }
+    #backendLI{
+        font-size:15px;
+    }
+    #currentlyLI{
+        font-size:15px;
+    }
+
+
 }
 
 
@@ -307,6 +352,23 @@ canvas{
         text-align: center;
         font-size: 18px;  
       }
+
+      #skilledIN{
+        font-size:17x;
+    }
+    #currentlyLearning{
+        font-size:15px;
+    }
+    #frontendLI{
+        font-size:15px;
+    }
+    #backendLI{
+        font-size:15px;
+    }
+    #currentlyLI{
+        font-size:15px;
+    }
+
 }
 @media (width:1536px) {
     img {
@@ -339,6 +401,24 @@ canvas{
         text-align: center;
         font-size: 90px;  
       }
+
+      #skilledIN{
+        font-size:70x;
+    }
+    #currentlyLearning{
+        font-size:70px;
+    }
+
+    #frontendLI{
+        font-size:60px;
+    }
+    #backendLI{
+        font-size:60px;
+    }
+    #currentlyLI{
+        font-size:60px;
+    }
+
 }
 @media ( width:1920px) {
     img {
@@ -371,6 +451,22 @@ canvas{
         text-align: center;
         font-size: 90px;  
       }
+      #skilledIN{
+        font-size:70x;
+    }
+    #currentlyLearning{
+        font-size:70px;
+    }
+
+    #frontendLI{
+        font-size:60px;
+    }
+    #backendLI{
+        font-size:60px;
+    }
+    #currentlyLI{
+        font-size:60px;
+    }
 
 }
 

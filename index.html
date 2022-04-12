@@ -4,8 +4,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title >M.S.</title>
-    <link rel="stylesheet" href="Style.css">
-    <link href="https://fonts.cdnfonts.com/css/Pixies" rel="stylesheet">
+    <link rel="stylesheet" href="css\Style.css">
+    <link href="http://fonts.cdnfonts.com/css/Pixies" rel="stylesheet">
 </head>
 <body >
     <nav data-spy="scroll" class="navbar navbar-collapse navbar-expand-lg  navbar navbar-dark " style="background-color: black;">
@@ -19,10 +19,10 @@
 
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="navbar-brand" style="font-family: 'Pixies';" href="#">Home</a>
+                <a class="navbar-brand" style="font-family: 'Pixies';" href="#MS">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" style="font-family: 'Pixies';" href="#">About Me</a>
+                <a class="nav-link" style="font-family: 'Pixies';" href="#AboutMe">About Me</a>
               </li>
 
             <li class="nav-item">
@@ -33,11 +33,11 @@
       </nav>
 
     <div id="title" class="name_bg">
-        <h1 style="text-align: center; font-family: 'Pixies';" class="name" onclick="topFunction()" >M.S.</h1>
+        <h1 style="text-align: center; font-family: 'Pixies';" class="name" onclick="topFunction()" id ="MS">M.S.</h1>
     
     </div>
     
-    <div > <p style="color: white; text-align:center; font-size:30px; font-family:'Pixies';" >To clear box, click on the emojis here  ↴ </p>
+    <div > <p style="color: white; text-align:center; font-size:15px; font-family:'Pixies';" >To clear box, click on the emojis here  ↴ </p>
          <p style="text-align:center; font-size:40px;" class="emojis" onclick="reload()" id="emojis" >❤️‍🔥</p>
     </div>
     <div id="content" class="content">
@@ -66,34 +66,59 @@
 
         </div>
     </div>    
-     
-    <div id="content" class="content">
-        <div id="content_page" class="content content-image">
-            
-            <div id="card_image">
-                <div id="title" class="titles">
-                <p style="text-align: center; font-family: 'Pixies';" class="animations" onclick="topFunction()" >About Me</p>
-
-                <canvas id="TheGame" class="canvas" >
+      
+        
+        <div id="content" class="content">
+            <div id="content_page" class="content content-image">
                 
-
-                </canvas>
-                <div id="AboutCard">
-                    <p >
-                        SOFTWARE ENGINEER BASED IN ITALY
-                    </p>
-            
-                </div>
-                </div>
-
-            </div>  
-          
+                <div id="card_image">
+                    <div id="title" class="titles">
+                    <p style="text-align: center; font-family: 'Pixies';" class="animations"  id="AboutMe">About Me</p>
+                     <canvas id="TheGame" class="canvas" >
+                        
+    
+                    </canvas>
+                    <div id="AboutCard">
+                        <p>
+                            SOFTWARE ENGINEER BASED IN ITALY
+                        </p>
+                        <br />
+                        <p id="skilledIN" style="text-align: center; font-family:'Pixies'; ">
+                            SKILLED IN:
+                            <li id="frontendLI" style="text-align: left; font-family:'Pixies'; " >
+                                FRONT-END: HTML,
+                                 CSS, Javascript (ES6)
+                                </li>
+                            <br />
+                            <li id="backendLI" style="text-align: left; font-family:'Pixies';" >
+                                BACK-END: C#, Javascript (ES6),
+                                VB.NET, PYTHON, <br /> 
+                                MS SQL SERVER, MySQL, PHP
+                            </li>
+                                    
+                        </p>
+                        <br />
+                        <br />       
+                        <p id="currentlyLearning" style="text-align: center; font-family:'Pixies'; ">
+                            CURRENTLY LEARNING:
+                            <li id="currentlyLI" style="text-align: left; font-family:'Pixies';">
+                                    Ethereum Blockchain, Crypto.org Blockchain, EVM, Solidity 
+                            </li>
+                        </p>
+                        <br />
+                        <br />
+                    </div>
+     
+                    </div>  
+                </div>  
+            </div>
         </div>
-    </div>  
+
+
+     
   
 
  
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     
@@ -112,7 +137,7 @@
         </span>
     </span>
 </span>
-<script src="JSQuery_Script.js"></script>
-<script src="Script.js"></script>
+<script src="./js/JSQuery_Script.js"></script>
+<script src="./js/Script.js"></script>
 </footer>
 </html>
