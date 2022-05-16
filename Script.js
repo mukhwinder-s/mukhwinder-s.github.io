@@ -225,106 +225,81 @@ changeEmojis()
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// THE GAME
+// 
 
-arr =[];
-let _gameCanvas_ = document.querySelector("#TheGame");
-
-var _gameCanvasSetted_ = setupCanvas(document.querySelector('#TheGame'));;
-var rocket = "🚀"
- 
-
-
-window.addEventListener('mousemove',loadStars());
 
  
-var z= 0;
-async function loadStars(){
- z +=1;
+let fib = document.querySelector("#TheGame");
 
-  if (_gameCanvas_.getContext){
+
+
+window.setInterval(() => {
+ text();
+}, 2000);
+
+ 
+
+function text() {
+const ctx = setupCanvas(document.querySelector('#TheGame'));
+ 
+const canvas = document.querySelector('#TheGame');
+if (canvas.getContext){
+
+
+  dashLen = 300, dashOffset = dashLen, speed = 20,
+  txt = "> PROGRAMMING IS IN MY DNA </>",
   
-    _gameCanvasSetted_ = setupCanvas(document.querySelector('#TheGame'));
+  
+  x = 19, i = 0;
+
+
+var size = window.innerWidth/10 > 100 ? 100 : window.innerWidth/10;  
+ctx.font =  size+"px Pixies"; 
+ 
+
+ctx.lineWidth = 5; ctx.lineJoin = "miter"; ctx.globalAlpha = 2/3;
+ctx.strokeStyle ='white';
+ctx.shadowColor = "yellow"; // string
+ctx.shadowOffsetX = 0; // integer
+ctx.shadowOffsetY = 0; // integer
+ctx.shadowBlur = 5; // integer
+ 
+(function loop() {
+  if(txt[i]==undefined){
+    return  
+  }     else{
+  ctx.clearRect(x, 0, 60, 150);
+  ctx.setLineDash([dashLen - dashOffset, dashOffset - speed]); 
+  dashOffset -= speed;                                         
+  ctx.strokeText(txt[i], x, 100);    
+  }
+ 
+
+if (dashOffset > 0) requestAnimationFrame(loop);             
+else {
+  if(txt[i]==undefined){
+    return
     
-    while(true){
+  }else{
 
-      stars(_gameCanvasSetted_);
-      
-      req = window.requestAnimationFrame(loadStars);  
-      await delay(5800);
-      window.cancelAnimationFrame(req);
-      // moveBall();
-    }
-    
-  
-  }
+   
+  ctx.fillText(txt[i], x, 100);  
+                          
+  dashOffset = dashLen;                                      
+  x += ctx.measureText(txt[i++]).width + ctx.lineWidth * Math.random();
+  ctx.setTransform(1, 0, 0, 1, 0, 3 * Math.random());        
+  ctx.rotate(Math.random() * 0.005);                         
+  if (i <= txt.length) {requestAnimationFrame(loop)} ;
 }
-
-// arr.push(GetPosition(e));
-// for(var i = 0; i<arr.length; i++){
-     
-     
-     
-     
-//   _gameCanvasSetted_.font = "30px Comic Sans MS";
-//   _gameCanvasSetted_.fillText(rocket,...arr[i]);
- 
-//  }
-var ballX = 400;
-var ballY = 400;  
-var mouseX = 0;
-var mouseY = 0;
-
- 
-function mouseMove(evt) {
-  mouseX = evt.clientX;
-  mouseY = evt.clientY;
 }
-function moveBall() {
+})();
  
-  var dx = (mouseX - ballX) * .125;
-  var dy = (mouseY - ballY) * .125;
-  
-  var distance = Math.sqrt(dx*dx + dy*dy);
- 
-  if(distance > 5){
-    dx *= 5/distance;
-    dy *= 5/distance;
-  }
-  ballX += dx;
-  ballY += dy;
-  
-  var canvas = document.getElementById("TheGame");
-  var ctx = canvas.getContext("2d");
-
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-  ctx.beginPath();
- ctx.font = "30px Comic Sans MS";
- ctx.fillText(rocket,ballX,ballY);
+}  
 
 }
 
-function stars(_gameCanvasSetted_) {
- 
-  const canvasSize = _gameCanvas_.width * _gameCanvas_.height;
- 
-  const starsFraction = canvasSize / 2000;
 
-  for(let i = 0; i < starsFraction; i++) {
-    //Set up random elements
-    let xPos = random(2, _gameCanvas_.width - 2);
-    let yPos = random(2, _gameCanvas_.height - 2);
-    let alpha = random(0.5, 1);
-    let size = random(1, 5);
 
-    //Add stars
-    _gameCanvasSetted_.fillStyle = 'white';
-    _gameCanvasSetted_.globalAlpha = alpha;
-    _gameCanvasSetted_.fillRect(xPos, yPos, size, size);
-  }
-
-}
 
 function getCenterLeft(){
    
